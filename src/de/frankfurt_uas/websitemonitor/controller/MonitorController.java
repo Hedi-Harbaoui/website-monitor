@@ -1,26 +1,29 @@
 package de.frankfurt_uas.websitemonitor.controller;
 
-import de.frankfurt_uas.websitemonitor.domain.User;
+import de.frankfurt_uas.websitemonitor.domain.ComparisonStrategy;
 import de.frankfurt_uas.websitemonitor.domain.Subscription;
+import de.frankfurt_uas.websitemonitor.domain.User;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MonitorController {
-    private List<User> users; 
+
+    private List<User> users;
 
     public MonitorController() {
         this.users = new ArrayList<>();
     }
 
-    public void registerNewUser(String url, String frequency, String channel) {
-        String newUserId = "USER_" + (users.size() + 1); 
+    public void registerNewUser(String url, String frequency, String channel, ComparisonStrategy strategy) {
+        String newUserId = "USER_" + (users.size() + 1);
         User newUser = new User(newUserId, channel);
-        
-        Subscription sub = new Subscription(url, frequency);
+
+        Subscription sub = new Subscription(url, frequency, strategy);
         newUser.addSubscription(sub);
-        
+
         users.add(newUser);
-        System.out.println("-> Registered " + newUserId + " with Subscription ID: " + sub.getSubscriptionId());
+        System.out.println("Registered " + newUserId + " | URL: " + url
+                + " | Strategy: " + strategy.getClass().getSimpleName());
     }
 
     public void modifySubscription(String subscriptionId, String newFrequency) {
@@ -45,6 +48,7 @@ public class MonitorController {
                 }
             }
             if (target != null) {
+                target.removeObserver(user);
                 user.getSubscriptions().remove(target);
                 System.out.println("-> Canceled " + subscriptionId);
                 return;
@@ -53,12 +57,12 @@ public class MonitorController {
     }
 
     public void checkAll() {
-        System.out.println("\n--- [checkAll() Initiated] ---");
+        System.out.println("\n========== checkAll() ==========");
         for (User user : users) {
             for (Subscription sub : user.getSubscriptions()) {
-                sub.checkForUpdates(user);
+                sub.checkForUpdates();
             }
         }
-        System.out.println("-----------------------------\n");
+        System.out.println("=================================\n");
     }
 }
