@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6260bb9c-0e66-4298-97e0-62a653d0825a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/controller/MonitorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/domain/ComparisonStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/domain/Subscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/domain/WebsiteObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/domain/strategy/ContentSizeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/domain/strategy/HtmlContentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/domain/strategy/TextContentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/infrastructure/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/de/frankfurt_uas/websitemonitor/infrastructure/WebsiteFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/website-monitor-main.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3G8rrwgObXLTy2Nh1TyxAdK9hNx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in website-monitor-main.executor": "Run",
+    "JUnit.HtmlContentStrategyTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hedih/Desktop/SWE-D/website-monitor-main/website-monitor-main"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.All in website-monitor-main">
+    <configuration name="All in website-monitor-main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="website-monitor-main" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HtmlContentStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="website-monitor-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="de.frankfurt_uas.websitemonitor.domain.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="de.frankfurt_uas.websitemonitor.domain.strategy" />
+      <option name="MAIN_CLASS_NAME" value="de.frankfurt_uas.websitemonitor.domain.strategy.HtmlContentStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in website-monitor-main" />
+        <item itemvalue="JUnit.HtmlContentStrategyTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6260bb9c-0e66-4298-97e0-62a653d0825a" name="Changes" comment="" />
+      <created>1783364239382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783364239382</updated>
+    </task>
+    <servers />
+  </component>
+</project>
